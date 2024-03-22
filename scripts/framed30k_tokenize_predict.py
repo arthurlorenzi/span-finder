@@ -31,8 +31,8 @@ predictor = SpanPredictor.from_path(
 	cuda_device=0,
 )
 
-with open(args.i) as f:
-	lines = [line.rstrip('\n') for line in file]
+with open(args.i) as fp:
+	lines = [line.rstrip('\n') for line in fp]
 
 tokens = list(map(tokenize, lines)) # ignore quotes
 
