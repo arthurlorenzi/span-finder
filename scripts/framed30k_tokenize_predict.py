@@ -32,7 +32,7 @@ predictor = SpanPredictor.from_path(
 )
 
 with open(args.i) as f:
-	lines = f.readlines()
+	lines = [line.rstrip('\n') for line in file]
 
 tokens = list(map(tokenize, lines)) # ignore quotes
 
