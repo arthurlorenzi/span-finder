@@ -34,7 +34,7 @@ predictor = SpanPredictor.from_path(
 with open(args.i) as f:
 	lines = f.readlines()
 
-tokens = lines(map(tokenize, lines))
+tokens = list(map(tokenize, lines))
 
 output = predictor.predict_batch_sentences(
 	tokens.tolist(),
