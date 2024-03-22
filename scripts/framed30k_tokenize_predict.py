@@ -37,7 +37,7 @@ with open(args.i) as f:
 tokens = list(map(tokenize, lines))
 
 output = predictor.predict_batch_sentences(
-	tokens.tolist(),
+	tokens,
 	output_format='json',
 	progress=True
 )
