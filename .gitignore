@@ -1,5 +1,6 @@
 data/
 cache/
+model/
 .idea
 
 # Byte-compiled / optimized / DLL files
